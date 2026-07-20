@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>개인정보처리방침 | 소비기한 관리 (QuickFridge)</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1f2937;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+    --accent: #059669;
+    --thead-bg: #f0fdf4;
+    --code-bg: #f3f4f6;
+    --callout-bg: #ecfdf5;
+    --callout-border: #059669;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f172a;
+      --fg: #e5e7eb;
+      --muted: #9ca3af;
+      --border: #263149;
+      --accent: #34d399;
+      --thead-bg: #14251f;
+      --code-bg: #1a2436;
+      --callout-bg: #12241d;
+      --callout-border: #34d399;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", Roboto, sans-serif;
+    line-height: 1.7;
+  }
+  .wrap {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 5rem;
+  }
+  header.doc-header {
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  h1 {
+    font-size: 1.6rem;
+    margin: 0 0 0.5rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border);
+    color: var(--accent);
+  }
+  h3 {
+    font-size: 1.02rem;
+    margin-top: 1.5rem;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.92rem;
+  }
+  .meta strong { color: var(--fg); }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 1.5rem;
+    font-size: 0.9rem;
+  }
+  th, td {
+    border: 1px solid var(--border);
+    padding: 0.55rem 0.7rem;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background: var(--thead-bg);
+    font-weight: 600;
+  }
+  .table-scroll {
+    overflow-x: auto;
+    border-radius: 8px;
+  }
+  code {
+    background: var(--code-bg);
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.88em;
+  }
+  .callout {
+    background: var(--callout-bg);
+    border-left: 4px solid var(--callout-border);
+    padding: 0.9rem 1.1rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+    font-size: 0.92rem;
+  }
+  .callout.warn {
+    border-left-color: #f59e0b;
+  }
+  a { color: var(--accent); }
+  ul { padding-left: 1.3rem; }
+  li { margin: 0.25rem 0; }
+  .toc {
+    background: var(--code-bg);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    font-size: 0.9rem;
+  }
+  .toc ol { margin: 0.4rem 0 0; padding-left: 1.2rem; }
+  .appendix-badge {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    padding: 0.1rem 0.6rem;
+    margin-bottom: 0.5rem;
+  }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="doc-header">
+    <h1>개인정보처리방침 (Privacy Policy)</h1>
+    <p class="meta">
+      <strong>시행일자:</strong> 2026-07-20<br/>
+      <strong>회사명:</strong> 링크스타트 (LinkStart)<br/>
+      <strong>앱 이름:</strong> 소비기한 관리 (QuickFridge) — <code>com.quickfridge.app</code><br/>
+      <strong>문의 이메일:</strong> <a href="mailto:lasid2000@gmail.com">lasid2000@gmail.com</a>
+    </p>
+  </header>
+
+  <div class="callout">
+    본 문서는 앱의 실제 소스코드(입력 데이터, 기기 권한 요청, 탑재 SDK)를 분석하여 작성되었으며, Google Play 스토어 및 Apple App Store의 개인정보 심사 기준(Data Safety / App Privacy “Nutrition Label”)에 맞춰 구성되었습니다.
+  </div>
+
+  <div class="toc">
+    목차
+    <ol>
+      <li>총칙</li>
+      <li>수집하는 정보 및 수집 방법</li>
+      <li>개인정보의 수집 및 이용 목적</li>
+      <li>개인정보의 보유 및 이용 기간 / 파기</li>
+      <li>개인정보의 제3자 제공 및 국외 이전</li>
+      <li>이용자의 권리와 행사 방법</li>
+      <li>아동의 개인정보</li>
+      <li>광고 식별자 및 맞춤형 광고(AdMob) 안내</li>
+      <li>개인정보 보호책임자 및 문의처</li>
+      <li>고지의 의무</li>
+      <li>부록 A. Google Play 데이터 보안 매핑표</li>
+      <li>부록 B. Apple App Privacy 매핑표</li>
+      <li>부록 C. 권한 및 SDK 요약</li>
+    </ol>
+  </div>
+
+  <h2 id="s1">1. 총칙</h2>
+  <p>링크스타트(이하 "회사")는 "소비기한 관리"(이하 "앱") 이용자의 개인정보를 중요하게 생각하며, 관련 법령 및 각 앱 마켓의 정책을 준수합니다. 본 앱은 <strong>회원가입/로그인 기능이 없으며</strong>, 이용자가 등록하는 상품 정보는 <strong>원칙적으로 이용자의 기기 내부에만 저장</strong>되고 회사의 서버로 전송되지 않습니다.</p>
+
+  <h2 id="s2">2. 수집하는 정보 및 수집 방법</h2>
+
+  <h3>2-1. 이용자가 직접 입력·생성하는 정보 (기기 로컬 저장, 서버 미전송)</h3>
+  <div class="table-scroll"><table>
+    <thead><tr><th>항목</th><th>설명</th><th>저장 위치</th></tr></thead>
+    <tbody>
+      <tr><td>상품명</td><td>이용자가 직접 입력하거나 바코드 조회로 채워진 상품명</td><td>기기 내부 DB (IndexedDB)</td></tr>
+      <tr><td>바코드 번호</td><td>스캔 또는 직접 입력한 상품 바코드</td><td>기기 내부 DB</td></tr>
+      <tr><td>등록일 / 소비(유통)기한</td><td>상품 등록일과 이용자가 설정/조정한 소비기한</td><td>기기 내부 DB</td></tr>
+      <tr><td>상품 카테고리·이모지</td><td>이용자가 선택한 분류 태그</td><td>기기 내부 DB</td></tr>
+      <tr><td>상품 사진</td><td>카메라로 직접 촬영한 상품 사진(선택 입력)</td><td>기기 내부 DB (base64 이미지 로컬 저장, <strong>외부 전송·업로드 없음</strong>)</td></tr>
+      <tr><td>알림 설정</td><td>소비기한 알림 활성화 여부, 알림 시간대 등</td><td>기기 로컬 저장소(localStorage)</td></tr>
+    </tbody>
+  </table></div>
+  <p>이 정보들은 앱을 삭제하면 함께 삭제되며, 이용자는 앱 내에서 개별 상품을 언제든지 삭제할 수 있습니다. 이름, 이메일, 전화번호 등 이용자를 식별할 수 있는 정보는 포함되지 않습니다.</p>
+
+  <h3>2-2. 기기 권한을 통해 접근하는 정보</h3>
+  <div class="table-scroll"><table>
+    <thead><tr><th>권한</th><th>Android 권한명</th><th>사용 목적</th><th>서버 전송 여부</th></tr></thead>
+    <tbody>
+      <tr><td>카메라</td><td><code>android.permission.CAMERA</code></td><td>바코드 스캔 인식, 상품 사진 촬영</td><td>없음 (촬영 영상은 저장되지 않으며, 인식/촬영에만 실시간 사용)</td></tr>
+      <tr><td>알림</td><td><code>android.permission.POST_NOTIFICATIONS</code></td><td>소비기한 임박 상품에 대한 로컬(기기 내) 알림 발송</td><td>없음 (서버 발송 푸시가 아닌 기기 내 로컬 알림)</td></tr>
+      <tr><td>인터넷</td><td><code>android.permission.INTERNET</code></td><td>바코드 상품정보 조회 API 호출, 광고 로드</td><td>2-4 참조</td></tr>
+    </tbody>
+  </table></div>
+  <p>※ 위치, 저장소(파일), 연락처, 마이크 등의 권한은 요청하지 않습니다.</p>
+
+  <h3>2-3. 앱 이용 중 자동 생성되는 진단 로그 (로컬 전용)</h3>
+  <p>앱 내부 오류 진단을 위해 오류/경고 로그(발생 시각, 오류 유형, 화면 영역 등)를 기기 내부 DB에 최대 1,000건 또는 30일간 보관 후 자동 삭제합니다. <strong>토큰, 이용자 식별자 등 민감정보는 로그에 포함되지 않으며, 이 로그는 외부 서버로 전송되지 않고 기기 내에서만 조회·삭제됩니다.</strong></p>
+
+  <h3>2-4. 외부 서비스(오픈API/SDK)를 통해 처리되는 정보</h3>
+  <p>앱은 아래 외부 서비스에 <strong>바코드 번호 또는 재료명(텍스트)만을 조회 목적으로 전송</strong>하며, 이름·연락처 등 개인 식별정보는 전송하지 않습니다.</p>
+  <div class="table-scroll"><table>
+    <thead><tr><th>서비스</th><th>제공처</th><th>전송 데이터</th><th>목적</th></tr></thead>
+    <tbody>
+      <tr><td>식품안전나라 Open API</td><td>식품의약품안전처</td><td>바코드 번호</td><td>상품명·소비기한 정보 조회</td></tr>
+      <tr><td>네이버 쇼핑 검색 API</td><td>네이버(NAVER)</td><td>바코드 번호(검색어로 사용)</td><td>상품명 보조 조회 (Android 네이티브 환경에서만 호출)</td></tr>
+      <tr><td>Spoonacular API</td><td>Spoonacular</td><td>냉장고 내 보유 재료명(영문 변환)</td><td>레시피 추천</td></tr>
+      <tr><td>Google AdMob</td><td>Google</td><td>광고식별자(ADID), 기기정보, IP 기반 대략 위치, 광고 상호작용 데이터</td><td>배너 광고 노출 및 측정</td></tr>
+    </tbody>
+  </table></div>
+  <p>Google AdMob을 제외한 위 서비스들은 이용자를 특정하지 않는 조회성 요청이며 별도의 광고·트래킹 목적 데이터 수집을 하지 않습니다. AdMob을 통해 수집되는 정보는 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google의 개인정보처리방침</a>에 따라 처리됩니다.</p>
+
+  <h2 id="s3">3. 개인정보의 수집 및 이용 목적</h2>
+  <ul>
+    <li>상품 등록·관리 및 소비기한 계산 등 앱 핵심 기능 제공</li>
+    <li>바코드 기반 상품정보 자동 조회를 통한 이용 편의 제공</li>
+    <li>소비기한 임박 알림 제공</li>
+    <li>레시피 추천 제공</li>
+    <li>광고 게재를 통한 서비스 운영 재원 확보</li>
+    <li>오류 진단 및 앱 안정성 개선(로컬 로그)</li>
+  </ul>
+
+  <h2 id="s4">4. 개인정보의 보유 및 이용 기간 / 파기</h2>
+  <ul>
+    <li>상품 정보, 알림 설정: 이용자가 직접 삭제하거나 앱을 삭제(제거)할 때까지 기기 내에 보관되며, 삭제 시 함께 소멸됩니다.</li>
+    <li>진단 로그: 최근 1,000건 또는 최근 30일을 초과하는 데이터는 자동으로 삭제됩니다.</li>
+    <li>회사는 앱 자체 서버에 개인정보를 저장하지 않으므로, 회사가 별도로 보관·파기하는 이용자 개인정보는 없습니다.</li>
+  </ul>
+
+  <h2 id="s5">5. 개인정보의 제3자 제공 및 국외 이전</h2>
+  <p>회사는 이용자의 개인정보를 별도로 수집·보관하지 않으므로 회사 차원의 제3자 제공은 발생하지 않습니다. 다만 앱에 포함된 아래의 외부 SDK/오픈API 제공자는 각자의 정책에 따라 자체적으로 정보를 처리하며, 이 과정에서 국외(미국 등)로 데이터가 전송될 수 있습니다.</p>
+  <ul>
+    <li>Google AdMob (Google LLC, 미국)</li>
+    <li>Spoonacular (Spoonacular LLC, 미국)</li>
+    <li>네이버 쇼핑 오픈API (네이버(주), 대한민국)</li>
+    <li>식품안전나라 오픈API (식품의약품안전처, 대한민국)</li>
+  </ul>
+
+  <h2 id="s6">6. 이용자의 권리와 행사 방법</h2>
+  <ul>
+    <li>이용자는 앱 내에서 등록한 상품 정보를 언제든지 조회, 수정, 삭제할 수 있습니다.</li>
+    <li>앱을 삭제하면 기기에 저장된 모든 상품 데이터·설정·로그가 함께 삭제됩니다.</li>
+    <li>맞춤형 광고를 원하지 않는 경우, 기기의 광고 설정(예: Android 설정 &gt; 개인정보 보호 &gt; 광고 &gt; 광고 개인 최적화 선택 해제)에서 광고 식별자 재설정 또는 맞춤 광고를 제한할 수 있습니다.</li>
+    <li>개인정보 관련 문의, 열람·삭제 요청은 아래 문의처로 연락해 주시기 바랍니다.</li>
+  </ul>
+
+  <h2 id="s7">7. 아동의 개인정보</h2>
+  <p>본 앱은 만 14세 미만 아동으로부터 개인정보를 의도적으로 수집하지 않습니다. 앱 자체가 회원가입 없이 동작하며 개인 식별정보를 수집하지 않으나, 광고 SDK(Google AdMob) 설정상 아동 대상 서비스 여부에 맞는 광고 처리(예: 아동용 태그 처리, 비맞춤형 광고 전환)가 필요할 수 있습니다.</p>
+
+  <h2 id="s8">8. 광고 식별자 및 맞춤형 광고(Google AdMob) 안내</h2>
+  <p>앱 하단에는 Google AdMob을 통한 배너 광고가 노출됩니다(카메라 촬영·등록 화면 등 오작동 위험이 있는 화면에서는 노출하지 않음). AdMob은 광고 게재·측정을 위해 광고식별자(ADID/IDFA), 기기 정보, IP 기반 대략적 위치 등을 수집할 수 있습니다. 자세한 내용과 옵트아웃 방법은 <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google 광고 정책</a> 및 각 운영체제의 광고 개인 최적화 설정을 참고하시기 바랍니다.</p>
+  <div class="callout warn">
+    <strong>iOS 출시 시 유의사항:</strong> iOS 앱에 AdMob을 적용하는 경우, App Tracking Transparency(ATT) 프레임워크에 따라 IDFA 사용 전 이용자 추적 동의 팝업을 구현해야 하며, 미동의 시 비맞춤형 광고로 전환되도록 처리해야 합니다.
+  </div>
+
+  <h2 id="s9">9. 개인정보 보호책임자 및 문의처</h2>
+  <p>회사명: 링크스타트<br/>문의 이메일: <a href="mailto:lasid2000@gmail.com">lasid2000@gmail.com</a></p>
+  <p>개인정보 처리와 관련한 불만, 문의, 열람·정정·삭제 요청은 위 이메일로 접수해 주시면 신속히 처리하겠습니다.</p>
+
+  <h2 id="s10">10. 고지의 의무</h2>
+  <p>본 개인정보처리방침은 법령, 정책 또는 서비스 변경사항을 반영하기 위해 개정될 수 있으며, 변경 시 앱 내 공지 또는 본 문서 업데이트를 통해 고지합니다.</p>
+
+  <h2 id="appa">부록 A. Google Play 데이터 보안(Data Safety) 양식 매핑표</h2>
+  <span class="appendix-badge">PLAY CONSOLE 참고용</span>
+  <div class="table-scroll"><table>
+    <thead><tr><th>Play Console 데이터 유형</th><th>수집 여부</th><th>공유 여부</th><th>비고</th></tr></thead>
+    <tbody>
+      <tr><td>위치</td><td>미수집</td><td>-</td><td>-</td></tr>
+      <tr><td>개인정보(이름/이메일/주소 등)</td><td>미수집</td><td>-</td><td>회원가입 기능 없음</td></tr>
+      <tr><td>재무 정보</td><td>미수집</td><td>-</td><td>-</td></tr>
+      <tr><td>사진 및 동영상</td><td>미수집(기기 내부 저장만, 외부 전송 없음)</td><td>-</td><td>촬영 사진은 로컬 DB에만 저장</td></tr>
+      <tr><td>메시지</td><td>미수집</td><td>-</td><td>-</td></tr>
+      <tr><td>앱 활동</td><td>미수집</td><td>-</td><td>-</td></tr>
+      <tr><td>앱 정보 및 성능(충돌 로그 등)</td><td>미수집(로컬 전용 진단 로그, 외부 미전송)</td><td>-</td><td>-</td></tr>
+      <tr><td>기기 또는 기타 ID</td><td><strong>수집</strong></td><td><strong>제3자(Google AdMob)에 공유</strong></td><td>광고 게재/측정 목적, 광고식별자(ADID)</td></tr>
+    </tbody>
+  </table></div>
+  <p style="font-size:0.88rem;color:var(--muted)">공통 체크 항목: 데이터는 암호화하여 전송됨(HTTPS API 호출), 이용자는 데이터 삭제를 요청할 수 있음(앱 내 삭제 또는 앱 삭제로 전체 삭제).</p>
+
+  <h2 id="appb">부록 B. Apple App Store 개인정보 취급방침(App Privacy) 매핑표</h2>
+  <span class="appendix-badge">APP STORE CONNECT 참고용</span>
+  <p style="font-size:0.9rem;color:var(--muted)">현재 iOS 빌드는 미구성 상태이며, 추후 iOS 출시 시 아래를 기준으로 작성합니다.</p>
+  <div class="table-scroll"><table>
+    <thead><tr><th>Apple 데이터 카테고리</th><th>수집 여부</th><th>개발자 연결</th><th>추적 목적 사용</th><th>비고</th></tr></thead>
+    <tbody>
+      <tr><td>연락처 정보</td><td>미수집</td><td>-</td><td>-</td><td>-</td></tr>
+      <tr><td>건강 및 피트니스</td><td>미수집</td><td>-</td><td>-</td><td>-</td></tr>
+      <tr><td>위치</td><td>미수집</td><td>-</td><td>-</td><td>-</td></tr>
+      <tr><td>민감한 정보</td><td>미수집</td><td>-</td><td>-</td><td>-</td></tr>
+      <tr><td>사용자 콘텐츠(사진 등)</td><td>미수집(기기 내부 저장, 외부 미전송)</td><td>-</td><td>-</td><td>-</td></tr>
+      <tr><td>검색 기록</td><td>미수집</td><td>-</td><td>-</td><td>-</td></tr>
+      <tr><td>식별자(기기 ID/광고 ID)</td><td><strong>수집(제3자 SDK: AdMob)</strong></td><td>설정에 따름</td><td><strong>예(맞춤형 광고)</strong></td><td>IDFA 사용 시 ATT 동의 필요</td></tr>
+      <tr><td>사용 데이터</td><td><strong>수집(제3자 SDK: AdMob)</strong></td><td>미연결</td><td>예</td><td>광고 노출/클릭 측정</td></tr>
+      <tr><td>진단 정보</td><td>미수집(자체 서버 미전송)</td><td>-</td><td>-</td><td>로컬 로그만 존재</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 id="appc">부록 C. 권한 및 SDK 요약</h2>
+  <span class="appendix-badge">요약</span>
+  <p><strong>기기 권한:</strong> CAMERA(카메라), POST_NOTIFICATIONS(알림), INTERNET(인터넷)</p>
+  <p><strong>탑재 SDK / 오픈API:</strong></p>
+  <ul>
+    <li>Google AdMob (<code>@capacitor-community/admob</code>) — 배너 광고</li>
+    <li>Capacitor Local Notifications (<code>@capacitor/local-notifications</code>) — 로컬(기기) 알림, 푸시/원격 알림 아님</li>
+    <li>Dexie / IndexedDB — 기기 내부 로컬 DB (온디바이스 저장, 서버 아님)</li>
+    <li>식품안전나라 Open API — 바코드 상품정보 조회</li>
+    <li>네이버 쇼핑 검색 Open API — 바코드 보조 조회</li>
+    <li>Spoonacular API — 레시피 추천</li>
+  </ul>
+  <p><strong>미탑재(해당 없음) 항목:</strong></p>
+  <ul>
+    <li>회원가입/로그인 기능 없음 (Google/Kakao 로그인 미사용)</li>
+    <li>Firebase / Google Analytics 등 애널리틱스 SDK 미사용</li>
+    <li>원격(서버) 푸시 알림 미사용</li>
+    <li>위치, 저장소, 연락처, 마이크 권한 미요청</li>
+  </ul>
+
+  <footer>
+    © 2026 링크스타트(LinkStart). 문의: <a href="mailto:lasid2000@gmail.com">lasid2000@gmail.com</a>
+  </footer>
+
+</div>
+</body>
+</html>
