@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>개인정보처리방침 | 하루용돈</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f8fafc;
+    --surface: #ffffff;
+    --text: #0f172a;
+    --muted: #475569;
+    --border: #e2e8f0;
+    --accent: #2563eb;
+    --table-head: #f1f5f9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b1220;
+      --surface: #121a2b;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --border: #24304a;
+      --accent: #60a5fa;
+      --table-head: #182238;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", Roboto, sans-serif;
+    line-height: 1.7;
+  }
+  .wrap {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 5rem;
+  }
+  header.doc-header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  h1 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin: 0 0 .5rem;
+    letter-spacing: -0.01em;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.92rem;
+  }
+  .meta strong { color: var(--text); }
+  h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 2.25rem 0 0.75rem;
+    padding-top: 0.25rem;
+    scroll-margin-top: 1rem;
+  }
+  h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0.6rem 0; color: var(--text); }
+  .note {
+    background: var(--table-head);
+    border-left: 3px solid var(--accent);
+    padding: 0.75rem 1rem;
+    border-radius: 0.4rem;
+    font-size: 0.92rem;
+    color: var(--muted);
+    margin: 0.75rem 0;
+  }
+  ul { padding-left: 1.3rem; margin: 0.6rem 0; }
+  li { margin: 0.3rem 0; }
+  .table-scroll {
+    overflow-x: auto;
+    margin: 0.75rem 0 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: 0.6rem;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 560px;
+    font-size: 0.88rem;
+  }
+  thead th {
+    background: var(--table-head);
+    text-align: left;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  th, td {
+    padding: 0.65rem 0.8rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  tbody tr:last-child td { border-bottom: none; }
+  strong { color: var(--text); }
+  .contact-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    padding: 1.1rem 1.3rem;
+    margin: 1rem 0;
+  }
+  .contact-box dl {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.4rem 1rem;
+  }
+  .contact-box dt { color: var(--muted); font-weight: 600; }
+  .contact-box dd { margin: 0; }
+  footer.doc-footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+    text-align: center;
+  }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="doc-header">
+    <h1>개인정보처리방침</h1>
+    <p class="meta">앱명: <strong>하루용돈 (Money Daily)</strong> · 시행일자: <strong>2026년 7월 26일</strong></p>
+  </header>
+
+  <p><strong>"하루용돈"</strong>(이하 "본 앱")은 이용자의 개인정보를 소중히 다룹니다. 본 방침은 본 앱이 어떤 정보를 다루는지, 그리고 이용자가 어떤 권리를 가지는지 설명합니다.</p>
+
+  <h2 id="s1">1. 앱이 처리하는 정보</h2>
+
+  <h3>1.1 이용자가 직접 입력하는 정보 (기기 내부에만 저장)</h3>
+  <p>본 앱은 별도의 회원가입, 로그인, 서버 연동 없이 동작합니다. 아래 정보는 <strong>오직 이용자의 기기에 로컬 데이터베이스(Room DB) 형태로만 저장</strong>되며, 개발사를 포함한 외부 서버로 전송되지 않습니다.</p>
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr><th>항목</th><th>수집 목적</th><th>저장 위치</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>예산(용돈) 금액 및 설정값</td><td>일일 지출 한도 계산 등 핵심 기능 제공</td><td>기기 내 로컬 데이터베이스(Room DB)</td></tr>
+        <tr><td>지출/수입 내역(금액, 메모, 카테고리, 일시)</td><td>가계부 기록·통계 제공</td><td>기기 내 로컬 데이터베이스(Room DB)</td></tr>
+        <tr><td>목표 물건 정보(이름, 가격, 등록일)</td><td>저축 목표 관리 기능 제공</td><td>기기 내 로컬 데이터베이스(Room DB)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>1.2 카메라 및 사진</h3>
+  <p>목표 물건을 등록할 때 이용자가 원할 경우 카메라로 사진을 촬영하거나 갤러리에서 사진을 선택할 수 있습니다. 촬영된 사진은 기기 내부 저장소에만 보관되며, 외부로 전송되지 않습니다. 카메라 권한은 이용자가 촬영 기능을 사용할 때만 요청됩니다.</p>
+
+  <h3>1.3 알림</h3>
+  <p>목표 금액 달성 알림, 일일 요약 알림 등은 기기 내부에서 생성되는 로컬 알림이며, 이 과정에서 개인정보가 외부로 전송되지 않습니다.</p>
+
+  <h3>1.4 광고(Google AdMob)</h3>
+  <p>본 앱은 무료로 제공되며, 운영을 위해 <strong>Google Mobile Ads(AdMob) SDK</strong>를 통한 전면광고를 포함하고 있습니다. 광고 제공 과정에서 Google 및 광고 파트너가 아래와 같은 정보를 수집·처리할 수 있습니다.</p>
+  <ul>
+    <li>광고 식별자(Advertising ID) 등 기기 식별 정보</li>
+    <li>대략적인 위치 정보, 기기/앱 사용 정보</li>
+    <li>광고 노출, 클릭 등 상호작용 정보</li>
+  </ul>
+  <p>이 정보는 광고 게재, 맞춤 광고 제공, 광고 성과 측정 목적으로 Google의 정책에 따라 처리됩니다. 자세한 내용은 Google의 개인정보처리방침을 참고하십시오.</p>
+  <ul>
+    <li>Google 개인정보처리방침: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+    <li>Google 광고 정책: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">https://policies.google.com/technologies/ads</a></li>
+  </ul>
+  <p class="note">이용자는 기기 설정(Android 설정 &gt; 광고)에서 광고 식별자를 재설정하거나 맞춤 광고 선택 해제(Opt-out)를 할 수 있습니다.</p>
+
+  <h2 id="s2">2. 접근 권한 안내</h2>
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr><th>권한</th><th>필수 여부</th><th>사용 목적</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>카메라 / 사진(갤러리)</td><td>선택</td><td>목표 물건 등록 시 사진 촬영 또는 선택. 사용 시점에만 권한을 요청하며, 거부해도 다른 기능 이용 가능</td></tr>
+        <tr><td>알림(POST_NOTIFICATIONS)</td><td>선택</td><td>목표 금액 달성 알림, 일일 요약 알림 등 기기 내부 로컬 알림 발송(서버 전송 없음)</td></tr>
+        <tr><td>인터넷</td><td>필수</td><td>광고(Google AdMob) 게재를 위한 네트워크 통신</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="s3">3. 제3자 제공</h2>
+  <p>본 앱은 위 §1.4에서 명시한 광고 서비스 제공(Google AdMob) 목적을 제외하고, 이용자의 개인정보를 제3자에게 제공하지 않습니다. 본 앱 자체는 별도의 자체 서버를 운영하지 않습니다.</p>
+
+  <h2 id="s4">4. 정보 보관 및 삭제</h2>
+  <ul>
+    <li>이용자 입력 데이터(예산·지출·목표 등)는 기기에만 저장되며, 앱을 삭제하면 함께 삭제됩니다.</li>
+    <li>앱 내 [설정 &gt; 데이터 전체 초기화] 메뉴에서 이용자가 언제든 직접 모든 데이터를 삭제할 수 있습니다.</li>
+  </ul>
+
+  <h2 id="s5">5. 아동의 개인정보</h2>
+  <p>본 앱은 특정 연령층을 제한하지 않으나, 만 14세 미만 아동이 이용할 경우 보호자의 지도 하에 이용할 것을 권장합니다. 개발자는 Google Play "타겟층 및 콘텐츠" 정책에 따라 앱의 타겟 연령층 및 광고 설정(아동 대상 여부)을 별도로 검토·설정합니다.</p>
+
+  <h2 id="s6">6. 이용자 권리</h2>
+  <p>이용자는 본인이 입력한 정보에 대해 언제든지 열람·수정·삭제할 권리를 가지며, 이는 앱 내 각 화면(내역서 수정/삭제, 설정 초기화 등)에서 직접 행사할 수 있습니다.</p>
+
+  <h2 id="s7">7. 개인정보처리방침 변경</h2>
+  <p>본 방침은 법령, 정책 또는 앱 기능 변경에 따라 수정될 수 있으며, 변경 시 본 문서 상단의 시행일을 갱신하여 고지합니다.</p>
+
+  <h2 id="s8">8. 문의처</h2>
+  <p>개인정보 관련 문의사항은 아래 연락처로 문의하시기 바랍니다.</p>
+  <div class="contact-box">
+    <dl>
+      <dt>앱 이름</dt><dd>하루용돈 (Money Daily)</dd>
+      <dt>문의 이메일</dt><dd><a href="mailto:lasid2000@gmail.com">lasid2000@gmail.com</a></dd>
+    </dl>
+  </div>
+
+  <h2 id="s9">9. 권익침해 구제방법</h2>
+  <p>정보주체는 개인정보침해로 인한 구제를 받기 위하여 아래 기관에 분쟁해결이나 상담 등을 신청할 수 있습니다. 아래 기관은 앱(개발자)과는 별개의 기관으로, 각 기관의 상담 내용에 대해서는 문의하시기 바랍니다.</p>
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr><th>기관</th><th>홈페이지</th><th>전화</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>개인정보침해신고센터(한국인터넷진흥원 운영)</td><td>privacy.kisa.or.kr</td><td>국번없이 118</td></tr>
+        <tr><td>개인정보 분쟁조정위원회</td><td>www.kopico.go.kr</td><td>1833-6972</td></tr>
+        <tr><td>대검찰청 사이버수사과</td><td>www.spo.go.kr</td><td>국번없이 1301</td></tr>
+        <tr><td>경찰청 사이버수사국</td><td>ecrm.cyber.go.kr</td><td>국번없이 182</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer class="doc-footer">
+    시행일자 2026년 7월 26일 · © 하루용돈
+  </footer>
+
+</div>
+</body>
+</html>
